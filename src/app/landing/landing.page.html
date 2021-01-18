@@ -1,0 +1,394 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<ion-header class="ion-no-border" >
+
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScrollStart)="getScrollPosition()">
+  <ion-grid>
+    <ion-row >
+      <ion-col>
+        <div >
+          <video class="landing-img" autoplay="autoplay" loop="loop" muted="muted"
+            src="assets\pexels-kampus-production-6248579.mp4" ></video>
+        </div>
+        <div class="text-header">
+          <div class="text">
+            <h3>XXXXXX Agency</h3>
+            <h4>persönlich direkt zeilorientiert</h4>
+            
+            <ion-icon class="animate__animated animate__bounce animate__infinite " name="arrow-down-outline" style="width: 60px; height: 60px; position: absolute; bottom: 300px;"
+              (click)="startPage()"></ion-icon>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-grid>
+          <ion-row class="text-row" id="first_row">
+            <ion-col size-lg="6" class="text-col-left">
+              <p class="animate__animated animate__fadeInLeftBig"> Für Unternehmer, die keine klassische Online Marketing
+                Agentur suchen, ist XXXXXXX+Team der richtige
+                Ansprechpartner. Wir entwickeln maßgeschneiderte Online Marketing Strategien, Webdesign, beraten und
+                begleiten
+                Sie persönlich, Stück für Stück auf Ihrem Weg.
+              </p>
+            </ion-col>
+            <ion-col size-lg="6">
+              <p>
+                Ihre individuellen Unternehmensziele stehen bei unseren Dienstleistungen im Zentrum. Frei nach Ihren
+                Wünschen
+                setzen wir die jeweils passenden Lösungen um, nehmen Ihnen Arbeit ab und stehen als kompetenter Berater
+                &
+                Begleiter zu Verfügung.</p>
+
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size-lg="6" class="left-list">
+              <h3>IHRE VORTEILE</h3>
+              <ul class="list-adv ">
+                <li>Beratung, Webdesign & Online Marketing aus einer Hand</li>
+                <li>persönliche Fachbetreuung vor Ort & digitale Expertise</li>
+                <li>faire und transparente Arbeitsweise & Kommunikation auf Augenhöhe</li>
+              </ul>
+            </ion-col>
+            <ion-col size-lg="6">
+              <h3>GRUNDSÄTZE</h3>
+              <ul class="list-adv">
+                <li>proaktive Denkweise & Strategien nach Maß</li>
+                <li>realistische Ziele & wachstumsorientiertes Handeln</li>
+                <li>Handschlagqualität & Spezialknowhow</li>
+              </ul>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+    <ion-row class="grey-row">
+      <div>
+        <p>
+          "Hab keine Angst mit deinem <b>Marketing</b> kreativ zu werden und zu experimentieren."
+        </p>
+        <h2>John Doe</h2>
+        <h3>Online Marketing Experte</h3>
+      </div>
+    </ion-row>
+
+    <ion-row class="black-row">
+      <ion-grid>
+        <ion-row>
+          <ion-col sze-lg="4">
+            <ion-icon class="black-row-icon" name="time-outline"></ion-icon>
+            <h1>17 Jahre</h1>
+            <h3>Erfahrung und aktuelles Knowhow</h3>
+          </ion-col>
+          <ion-col sze-lg="4">
+            <ion-icon class="black-row-icon" name="trophy-outline"></ion-icon>
+            <h1>1 Ziel</h1>
+            <h3>Nachhaltige Lösungen um Sie zu entlasten</h3>
+          </ion-col>
+          <ion-col sze-lg="4">
+            <ion-icon class="black-row-icon" name="location-outline"></ion-icon>
+            <h1>999 Wege</h1>
+            <h3>Individuell und flexibel ohne 0815-Strategien</h3>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-row>
+    <ion-row class="green-row" id="aboutus">
+      <div>
+        <ion-icon class="icon-logo" name="logo-amplify"></ion-icon>
+        <h3>Sie suchen digitale Expertise? </h3>
+        <h4>Wir freuen uns mehr von Ihnen zu erfahren.</h4>
+        <button class="btn" (click)="this.Router.navigate(['/contact-us'])">KONTAKTIEREN SIE UNS</button>
+      </div>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-lg="6" class="skill-container">
+        <div class="skill">
+          <ion-icon name="mail-outline" style="width: 60px; height: 60px;"></ion-icon>
+          <h3>DIGITALE MEDIEN</h3>
+          <p>Digital Media ist für uns kein Fremdwort. Egal ob SEO, Webdesign, Google Ads, Social Media, Content oder
+            Online Marketing – je nach Bedarf stehen wir Ihnen tatkräftig mit unserem Knowhow zur Verfügung und steuern
+            Sie individuell zum Ziel.</p>
+          <button class="btn-small">UNSERE LEISTUNGEN</button>
+        </div>
+      </ion-col>
+      <ion-col size-lg="6" class="skill-container">
+        <div class="skill">
+          <ion-icon name="cellular-outline" style="width: 60px; height: 60px;"></ion-icon>
+          <h3>ONLINE MARKETING</h3>
+          <p>Marketing braucht Lösungen nach Maß. Das beste Marketing ist nicht zielführend, wenn es an den jeweils
+            notwendigen Strategien fehlt. Gemeinsam mit Ihnen finden wir die richtige Positionierungs- und
+            Marketingstrategie, damit mehr Leads & Sales entstehen.
+            ONLINE MARKETING</p>
+          <button class="btn-small">ONLINE MARKETING</button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col size-lg="6" class="skill-container">
+        <div class="skill">
+          <ion-icon name="sunny-outline" style="width: 60px; height: 60px;"></ion-icon>
+          <h3>DIGITALISIERUNG</h3>
+          <p> Digitalisierung ist mehr als nur ein Wort. Diese beschreibt den größten Wandel in der Gesellschaft seit
+            dem Buchdruck durch Gutenberg. Wir lassen Sie
+            dabei nicht im Regen stehen und begleiten Sie Stück für Stück auf Ihrem Weg zum Erfolg.
+            DIGITALISIERUNG</p>
+          <button class="btn-small">DIGITALISIERUNG</button>
+        </div>
+      </ion-col>
+      <ion-col size-lg="6" class="skill-container">
+        <div class="skill">
+          <ion-icon name="settings-outline" style="width: 60px; height: 60px;"></ion-icon>
+          <h3> EXPERTENTEAM</h3>
+          <p>Bei uns gibt es keine Einzelkämpfer und keinen Chef. Wir sind ein perfekt eingespieltes Kollektiv von
+            Fachleuten. Hier greift ein Rädchen perfekt ins andere. Bei uns sprechen Sie gleich direkt mit dem richtigen
+            Ansprechpartner. Das spart Zeit, Geld und vor allem Energie.
+          </p>
+          <button class="btn-small">ÜBER UNS</button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="slider-row">
+      <ion-col size-lg="12" class="slides-container">
+        <ion-slides [options]="slideOpts" #slides pager="true" autoplay="10000" (ionSlideWillChange)="slideChanged()">
+          <ion-slide class="slide">
+            <ion-button *ngIf="isFirst != true" color="#393e46" class="arrow-btn arrow-btn-lft"
+              (click)="slides.slidePrev()">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+            <div class="slide-item">
+              <h1>John Doe</h1>
+              <h3>XXXXXXXXXX GmbH </h3>
+              <h3>Business Developer</h3>
+              <p>XXXXXXX+Team hat mir eine erstklassige Webseite erstellt die repräsentativ und benutzerorientiert ist.
+                Ich
+                bin sehr zufrieden was den Service von Florian XXXXXXX angeht. Freundlich , Kompetent und für jede Idee
+                ein
+                Konzept. Was will man mehr. Die beste Wahl für ein Web-Gesamtpaket.</p>
+            </div>
+            <ion-button color="#393e46" *ngIf="isLast != true" class="arrow-btn arrow-btn-rigth"
+              (click)="slides.slideNext()">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-slide>
+
+
+          <ion-slide class="slide">
+            <ion-button *ngIf="isFirst != true" color="#393e46" class="arrow-btn arrow-btn-lft"
+              (click)="slides.slidePrev()">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+            <div class="slide-item">
+              <h1>John Doe</h1>
+              <h3>XXXXXXX OHG</h3>
+              <h3>Geschäftsführer</h3>
+              <p> Unser Unternehmen wurde im Bereich der Digitalisierung, Webdesign und dem Online Marketing sehr gut
+                beraten, Florian XXXXXXX hat uns neue Wege für die Zukunft aufgezeigt, Probleme gelöst und unserer
+                Corporate Website neues Leben eingehaucht. Wir sind mit der Beratung, Umsetzung und den
+                Projektergebnissen
+                sehr zufrieden. Wir können XXXXXXX+Team uneingeschränkt empfehlen!</p>
+            </div>
+            <ion-button color="#393e46" *ngIf="isLast != true" class="arrow-btn arrow-btn-rigth"
+              (click)="slides.slideNext()">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-slide>
+
+          <ion-slide class="slide">
+            <ion-button *ngIf="isFirst != true" color="#393e46" class="arrow-btn arrow-btn-lft"
+              (click)="slides.slidePrev()">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+            <div class="slide-item">
+              <h1>John Doe</h1>
+              <h3>XXXXX GmbH</h3>
+              <h3>Geschäftsführer</h3>
+              <p> Was wir tun, das tun wir mit Leidenschaft. Unser Credo erlebe ich bei unserer Zusammenarbeit mit
+                XXXX&XXXX tagtäglich. Florian überlässt nichts dem Zufall und wir können uns zu 100% auf ihn
+                verlassen. Wir freuen uns bereits jetzt auf die zukünftigen Projekte mit XXXXXXX&Team!</p>
+            </div>
+            <ion-button color="#393e46" *ngIf="isLast != true" class="arrow-btn arrow-btn-rigth"
+              (click)="slides.slideNext()">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-lg="6" class="text-container">
+        <h3>AUF DEM RICHTIGEN WEG
+        </h3>
+        <p>Wir leiten und entwickeln unterschiedliche Webdesign und Online Marketing Projekte mit engagierten und
+          spezialisierten Experten. B2B- und B2C-Projekte, nationale und internationale Projekte in verschiedenen
+          Sektoren. Was auch immer Ihre Bedürfnisse und Ziele sind, XXXXXXX+Team kann Ihnen professionelle Online
+          Marketing Dienstleistungen und Beratung garantieren, um Ihr Unternehmen auf den richtigen Weg zu bringen!</p>
+      </ion-col>
+
+      <ion-col size-lg="6" class="text-container">
+        <h3>GEBÜNDELTE ERFAHRUNG
+        </h3>
+        <p>Seit vielen Jahren unterstützen wir das Wachstum von Unternehmen und Start-ups durch die Entwicklung
+          ausgefeilter Marketingstrategien und digitaler Dienste. Wir suchen nicht nach Kunden, sondern nach
+          herausfordernden Projekten, Beziehungen und einzigartigen Erfahrungen. Wir wollen einzigartige Projekte in
+          einzigartige Erfolge verwandeln.
+          Erzählen Sie uns von Ihren Zielen.
+        </p>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col size-lg="6" class="text-container">
+        <h3>ONLINE MARKETING LÄSST IHRE MARKE WACHSEN
+
+        </h3>
+        <p>Bei der Entwicklung und Umsetzung effektiver Kommunikationsstrategien sind wir der richtige Partner, um Ihre
+          Marke und Ihre Online-Präsenz auszubauen, die Sichtbarkeit zu erhöhen, die Marke zu stärken und Produkte und
+          Dienstleistungen online zu bewerben. Wir bieten Marketing-Beratung für Kunden in verschiedensten Branchen,
+          sowohl im B2B- als auch im B2C-Bereich.</p>
+      </ion-col>
+
+      <ion-col size-lg="6" class="text-container">
+        <h3>DIGITALES MARKETING DAS FUNKTIONIERT
+        </h3>
+        <p>Die Kommunikationsformen entwickeln sich weiter und das Marketing verschiebt sich immer weiter in die
+          digitale Welt. XXXXXXX+Team ist der Partner, der Unternehmen dabei unterstützt, die neuen Möglichkeiten des
+          Internets auszureizen und die Sichtbarkeit und Kundenakquise durch gezielte Kampagnen, SEO-Strategien,
+          Online-Werbung und Social Media Management zu erhöhen.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="slider-companies">
+      <ion-col size-lg="12" class="companies-container">
+        <ion-slides [options]="slideOptsCustomer" #CustomerSlides pager="true" autoplay="100"
+          (ionSlideWillChange)="slideChangedCustomer()">
+          <ion-slide *ngFor="let item of allCustomers">
+            <div class="slide-item">
+              <img src="{{item}}" class="customer" style="width: 400px; height: 400px;">
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+    <ion-row class="black-row">
+      <ion-col size-lg="12">
+        <ion-grid>
+          <ion-row>
+            <ion-col size-lg="3" class="company-footer">
+              <h1>XXXXXXX+TEAM</h1>
+              <p>Als Dienstleister verstehen wir uns als langfristiger Partner, darum investieren wir in Ihre
+                Zufriedenheit.</p>
+              <p>XXXXXXX+Team Agentur-Logo Webdesign, Seo, Onlinemarketing, Werbetexte uvm.</p>
+
+              <div style="margin-top: 100px;">
+                <h3>XXXXXXX+XXXX Online-Marketing</h3>
+                <h3>XXXXXXXXXXXX XXXX</h3>
+                <h3>XXXXX XXXX (XX)</h3>
+                <h3>XXXXXXX - XXXXXXXX</h3>
+                <h3>Telefon: +XX XXX XXXX XXXX</h3>
+                <h3>E-Mail: info@XXXXXXX.team</h3>
+                <h3>XXXXXXX+Team d. XXXXXX XXXXXXX</h3>
+              </div>
+
+            </ion-col>
+
+            <ion-col size-lg="3" class="company-footer footer-posts">
+              <h1>AKTUELLES</h1>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/6248948/pexels-photo-6248948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>12. Mai 2020</h5>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/6248948/pexels-photo-6248948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>12. November 2020</h5>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/6248948/pexels-photo-6248948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>25. November 2020</h5>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/6248948/pexels-photo-6248948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>01. Mai 2020</h5>
+                </div>
+              </div>
+            </ion-col>
+
+            <ion-col size-lg="3" class="company-footer footer-inputs">
+              <h1>INPUTS</h1>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>04. Mai 2020</h5>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>02. April 2020</h5>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>12. Dezember 2020</h5>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                <div class="item-text">
+                  <h4>Was ist Inbound-Marketing?</h4>
+                  <h5>23. Dezember 2020</h5>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col size-lg="3" class="company-footer company-topics">
+              <h1>Themen</h1>
+              <h3>Thema Beratung</h3>
+              <h3>Thema Branding</h3>
+              <h3>Thema CMS</h3>
+              <h3>Thema Google</h3>
+              <h3>Thema Online Marketing</h3>
+              <h3>Thema Unternehmen Thema</h3>
+              <h3>Webdesign</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

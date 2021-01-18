@@ -1,0 +1,60 @@
+<ion-header class="ion-no-border">
+
+</ion-header>
+<ion-content>
+  
+  <ion-grid class="contact-page-wrapper">
+    <!--ion-row>
+      <div class="card" tabindex="0">
+        <span class="card__infoicon">
+          <ion-icon name="information-circle-outline"></ion-icon>
+        </span>
+        <h1 class="card__title">This is a title</h1>
+        <p class="card__description">Lorem ipsum dolor sit amet and this is all the lorem ipsum text I remember</p>      
+        <p class="card__credits">Thanks <a class="card__reference" href="https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow">Gary Simon</a> for the inspiration</p>
+      </div>
+    </ion-row-->
+    <ion-row>
+      <ion-col size-lg="12">
+        <h1>FORMULAR </h1>
+        <h3>Wir freuen uns über Ihr Interesse und sind jederzeit gerne für Sie da.</h3>
+        <form [formGroup]="contactForm">
+          <div>
+            <ion-label class="label" position="stacked">Ihr Name *</ion-label>
+            <ion-input class="inputField" clearInput type="text" formControlName="name" name="name"></ion-input>
+          </div>
+          <div>
+            <ion-label class="label" position="stacked">Ihre E-mail *
+            </ion-label>
+            <ion-input class="inputField" clearInput type="email" formControlName="email" name="email"></ion-input>
+          </div>
+          <div>
+            <ion-label class="label" position="stacked">Ihre Nachricht </ion-label>
+            <ion-textarea rows="2" spellcheck="true" class="inputField " clearInput inputmode="text" formControlName="request" name="request"></ion-textarea>
+          </div>
+          <div class="agb">
+            <input class="check-agb" type="checkbox" id="agb" name="agb">
+            <label for="agb" class="label-agb">Ich stimme zu, dass meine Angaben zur Bearbeitung gespeichert werden und
+              habe die <a href="#">Datenschutzerklärung</a> akzeptiert. *</label>
+            <button class="btn" type="submit">Absenden</button>
+          </div>
+        </form>
+      </ion-col>
+    </ion-row>
+    <ion-row class="contact-methods">
+      <ion-col size-lg="6">
+        <h2>TELEFON</h2>
+        <h3>Zu Bürozeiten sind wir für Sie telefonisch erreichbar: </h3>
+        <h2 class="contact-method">+XX XXX XXXX XXX</h2>
+      </ion-col>
+
+      <ion-col size-lg="6">
+        <h2>E-MAIL</h2>
+        <h3>Gerne erreichen Sie uns auch über eine E-Mail: </h3>
+        <h2 class="contact-method">info@XXXXXX.XXXXX</h2>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

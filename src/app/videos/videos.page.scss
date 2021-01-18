@@ -1,0 +1,84 @@
+.link-list-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.link-list {
+    display: flex;
+    margin: 0;
+}
+
+li {
+    font-family: 'Staatliches', cursive;
+    padding: 0px 0px 0px 45px;
+    font-size: 1.2rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.Logo {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.column {
+    padding: 10px;
+}
+
+.video-container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+
+
+.video-container:hover .middle {
+    opacity: 1;
+}
+
+.video {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.video-des-wrapper {
+    padding: 20px;
+    color: black;
+}
+
+.divider {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 33%;
+    background-color: black;
+    height: 1px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    cursor: pointer;
+}

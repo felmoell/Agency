@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<ion-header class="ion-no-border" id="header">
+  <ion-toolbar class="header" >
+    <ion-buttons slot="start">
+      <img src="../../assets/customers/logo-25.svg" (click)="this.Router.navigate(['/landing'])" class="logo">
+    </ion-buttons>
+    <div class="nav-links-wrapper">
+
+      <ul class="header-list animate__animated animate__fadeInLeftBig">
+        <li (click)="this.Router.navigate(['/landing'])" class="header_link">HOME</li>
+        <li (click)="this.Router.navigate(['/videos'])" class="header_link">VIDEO</li>
+        <li (click)="this.Router.navigate(['/fotos'])" class="header_link">FOTO</li>
+        <li (click)="this.Router.navigate(['/about-us'])" class="header_link">ÜBER UNS</li>
+        <li (click)="this.Router.navigate(['/contact-us'])" class="header_link">KONTAKT</li>
+        <li (click)="this.Router.navigate(['/jobs'])" class="header_link">KARRIERE</li>
+      </ul>
+    </div>
+    <ion-buttons slot="end">
+      <img src="../../assets/customers/logo-25.svg" (click)="this.Router.navigate(['/landing'])" class="logo">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

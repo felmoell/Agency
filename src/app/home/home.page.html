@@ -1,0 +1,182 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<ion-header class="ion-no-border" >
+</ion-header>
+
+<ion-content id="body" class="has-header" >
+  <ion-grid style="margin-top: 100px;">
+    <ion-row>
+      <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="6" offset-lg="3">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="6">
+        <div class="categories-wrapper">
+          <div class="categories">
+            <a class="category_item" id="category_item_{{item.key}}" *ngFor="let item of myMap | keyvalue"
+              (click)="setCatActive(item.key)">
+              <h2>{{item.key}} </h2>
+              <h3 class="count-category" id="count_{{item.key}}">{{item.value}}</h3>
+            </a>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12">
+        <ion-grid>
+          <ion-row>
+            <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="2">
+              <div class="demo coursemeal " *ngFor="let ImageGroupItem of ImageGroup1; let i = index">
+                <div class="coursemeal__div " (click)="showCaru(ImageGroupItem)">
+                  <picture class="responsive-img">
+                    <img src={{ImageGroupItem.thumbnail}} alt="Appetizer">
+                  </picture>
+                  <div class="coursemeal-info">
+                    <p class="coursemeal-info__link">{{ImageGroupItem.name}}</p>
+                  </div>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="2">
+              <div class="demo coursemeal " *ngFor="let ImageGroupItem of ImageGroup2; let i = index">
+                <div class="coursemeal__div " (click)="showCaru(ImageGroupItem)">
+                  <picture class="responsive-img">
+                    <img src={{ImageGroupItem.thumbnail}} alt="Appetizer">
+                  </picture>
+                  <div class="coursemeal-info">
+                    <p class="coursemeal-info__link">{{ImageGroupItem.name}}</p>
+                  </div>
+                </div>
+              </div>
+            </ion-col>
+
+            <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="2">
+              <div class="demo coursemeal " *ngFor="let ImageGroupItem of ImageGroup3; let i = index">
+                <div class="coursemeal__div " (click)="showCaru(ImageGroupItem)">
+                  <picture class="responsive-img">
+                    <img src={{ImageGroupItem.thumbnail}} alt="Appetizer">
+                  </picture>
+                  <div class="coursemeal-info">
+                    <p class="coursemeal-info__link">{{ImageGroupItem.name}}</p>
+                  </div>
+                </div>
+              </div>
+            </ion-col>
+
+            <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="2">
+              <div class="demo coursemeal " *ngFor="let ImageGroupItem of ImageGroup4; let i = index">
+                <div class="coursemeal__div " (click)="showCaru(ImageGroupItem)">
+                  <picture class="responsive-img">
+                    <img src={{ImageGroupItem.thumbnail}} alt="Appetizer">
+                  </picture>
+                  <div class="coursemeal-info">
+                    <p class="coursemeal-info__link">{{ImageGroupItem.name}}</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </ion-col>
+
+            <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="2">
+              <div class="demo coursemeal " *ngFor="let ImageGroupItem of ImageGroup5; let i = index">
+                <div class="coursemeal__div " (click)="showCaru(ImageGroupItem)">
+                  <picture class="responsive-img">
+                    <img src={{ImageGroupItem.thumbnail}} alt="Appetizer">
+                  </picture>
+                  <div class="coursemeal-info">
+                    <p class="coursemeal-info__link">{{ImageGroupItem.name}}</p>
+                  </div>
+                </div>
+              </div>
+
+            </ion-col>
+
+            <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="2">
+              <div class="demo coursemeal " *ngFor="let ImageGroupItem of ImageGroup6; let i = index">
+                <div class="coursemeal__div " (click)="showCaru(ImageGroupItem)">
+                  <picture class="responsive-img">
+                    <img src={{ImageGroupItem.thumbnail}} alt="Appetizer">
+                  </picture>
+                  <div class="coursemeal-info">
+                    <p class="coursemeal-info__link">{{ImageGroupItem.name}}</p>
+                  </div>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div id="menu" class="menu">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-lg="6">
+          <button class="close-btn-mobile" id="close-btn-mobile" (click)="closeMenuMobile()">
+            <ion-icon class="close-btn-icon" name="close-outline"></ion-icon>
+          </button>
+          <div class="menu-left" id="menu-left">
+            <ul>
+              <li>
+                <h2 class="menu-item-left" (click)="navToFotos()">Fotos</h2>
+              </li>
+              <li>
+                <h2 class="menu-item-left" (click)="navToVideos()">Videos</h2>
+              </li>
+              <li>
+                <h2 class="menu-item-left">Follow us</h2>
+              </li>
+              <li>
+                <h2 class="menu-item-left">Contact us</h2>
+              </li>
+            </ul>
+          </div>
+        </ion-col>
+        <ion-col size-lg="6">
+          <button class="close-btn" (click)="closeMenu()">
+            <ion-icon class="close-btn-icon" name="close-outline"></ion-icon>
+          </button>
+          <div class="menu-right" id="menu-right">
+            <h3 class="menu-item-right">ANDRE BEATO</h3>
+            <h3 class="menu-item-right">ARCADE</h3>
+            <h3 class="menu-item-right">ATHOM STUDIOS</h3>
+            <h3 class="menu-item-right">BENOIT CHALLAND</h3>
+            <h3 class="menu-item-right">BEN FEARNLEY</h3>
+            <h3 class="menu-item-right">EMMANUELLE ET JULIEN</h3>
+            <h3 class="menu-item-right">GARRIGOSA STUDIO</h3>
+            <h3 class="menu-item-right">MACHINEAST</h3>
+            <h3 class="menu-item-right">PLATINUM</h3>
+            <h3 class="menu-item-right">SANTI ZORAIDEZ</h3>
+            <h3 class="menu-item-right">JVG</h3>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div id="caru" class="carou">
+    <button class="close-btn" (click)="closeCarusell()">
+      <ion-icon class="close-btn-icon" name="close-outline"></ion-icon>
+    </button>
+    <ion-slides [options]="mySlideOptions" #slides pager="true" autoplay="10000" (ionSlideWillChange)="slideChanged()">
+      <ion-slide class="img-slider" *ngFor="let item of items">
+        <ion-button *ngIf="isFirst != true" color="#393e46" class="arrow-btn arrow-btn-lft"
+          (click)="slides.slidePrev()">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-button>
+        <img class="img-carou" src={{item}}>
+        <ion-button color="#393e46" *ngIf="isLast != true" class="arrow-btn arrow-btn-rigth"
+          (click)="slides.slideNext()">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

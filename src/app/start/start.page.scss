@@ -1,0 +1,57 @@
+ion-content {
+  --ion-background-color: rgba(0, 0, 0, .9);
+}
+
+.img-carou {
+  border-radius: 5px;
+  height: 90vh;
+  &:hover{
+    .start-btn{
+      opacity: 1;
+    } 
+  }
+}
+.img-slider {
+  height: 100%;
+  padding: 50px;
+
+}
+
+.arrow-btn {
+ 
+  width: 75px;
+  height: 75px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #393e46;
+
+}
+
+.arrow-btn-rigth {
+  position: absolute;
+  right: 0;
+}
+
+.arrow-btn-lft {
+  position: absolute;
+  left: 0;
+
+}
+
+.start-btn {
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+  &:hover{
+    background-color: turquoise;
+    opacity: 1;
+    transition: ease-in;
+  }
+}
+
+.arrow-icon {
+  width: 100px;
+  height: 100px;
+}

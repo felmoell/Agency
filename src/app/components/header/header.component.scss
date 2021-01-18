@@ -1,0 +1,60 @@
+$green :  #87FAD4;
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+.header {
+    background-color: transparent;
+ 
+}
+.nav-links-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-list {
+    margin: 0;
+    color: #393e46;
+    display: flex;
+    
+
+    & li {
+        padding: 0 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: white;
+        &:hover {
+            color: #87FAD4 !important;
+            text-decoration: underline;
+            text-decoration-color:#87FAD4;
+        }      
+    }
+}
+.logo{
+    float: left;
+   visibility: hidden;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 999;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

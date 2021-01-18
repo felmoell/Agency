@@ -1,0 +1,24 @@
+
+$green : #87FAD4;
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: $green;
+    right: 30px;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 200;
+    max-width: 10vw;
+    &:hover{
+        background-color: #272727;
+        cursor: pointer;
+    }
+}
+.cookie-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    & p{
+        font-size: 1rem;
+        max-width: 85vw;
+    }
+}

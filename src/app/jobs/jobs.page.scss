@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+.img {
+    background: url('https://images.pexels.com/photos/2058128/pexels-photo-2058128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 33vh;
+    width: 100%;
+    display: block;
+    filter: grayscale(73%);
+    
+
+}
+
+.text-row {
+    padding: 0px 10vw;
+}
+
+.heading {
+    font-weight: 600;
+}
+.job-desc-heading{
+    padding: 30px 0px 10px 0px;
+}
+
+.text-under-heading {
+    font-size: 1.35rem;
+}
+
+.job-desc-left {
+    padding: 30px 30px 30px 0px;
+    
+}
+
+.job-desc-right {
+    padding: 30px 30px 30px 0px;
+    margin-left: 100px;
+    width: 23vw;
+}
+.header-line{
+    font-weight: 800;
+    font-size: 2rem;
+}
+.text-row{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0px 30vw;
+}
+
+.contact-row{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0px 30vw;
+}
+.contact-row-mail{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0px 17vw;
+}
+ul{
+    list-style: circle;
+    margin-left: 45px;
+    & li{
+        font-size: 1.3rem;
+        padding: 5px 0px;
+    }
+}
+.person-header{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: url('https://images.pexels.com/photos/5989938/pexels-photo-5989938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    margin-right: 30px;
+}
+.contact-wrapper{
+    display: flex;   
+}
+.header-line-contact{
+    margin-top: 15px;
+    text-decoration: underline;
+    transition: top ease 0.5s;
+    &:hover{
+       
+        left: 20px;
+        padding-left: -20px;
+        cursor: pointer;
+    }
+}
+.mail-wrapper{
+    background-color: #17CEDB ;
+    padding: 100px;
+    & b{
+        color: white;
+    }
+    & h2{
+        font-size: 3rem;
+        font-weight: 800;
+        padding: 20px 0px;
+    }
+    & .contact-btn{
+        font-size: 1.4rem;
+        &:hover{
+          //  color: white;
+            cursor: pointer;
+            margin-left: 20px;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: #87FAD4;    
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: 600;
+    &:hover{
+        background-color: #272727;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+}
+.job-name{
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+   
+}

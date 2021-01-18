@@ -1,0 +1,59 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+
+
+<ion-content class="has-header">
+  <ion-grid style="margin-top: 100px;">
+    <ion-row>
+      <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="3">
+        <div class="video-container" *ngFor="let VideoGroupItem of VideoGroup1; let i = index">
+          <div class="video-des-wrapper">
+            <h2 style="color: black;">{{VideoGroupItem.name}}</h2>
+          </div>
+          <video class="video" height="100%" width="100%" controls id="myvideo">
+            <source src="{{VideoGroupItem.Source}}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </ion-col>
+      <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="3">
+        <div class="video-container" *ngFor="let VideoGroupItem of VideoGroup2; let i = index">
+          <div class="video-des-wrapper">
+            <h2 style="color: black;">{{VideoGroupItem.name}}</h2>
+          </div>
+          <video class="video" height="100%" width="100%" controls id="myvideo">
+            <source src="{{VideoGroupItem.Source}}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </ion-col>
+      <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="3">
+        <div class="video-container" *ngFor="let VideoGroupItem of VideoGroup3; let i = index">
+          <div class="video-des-wrapper">
+            <h2 style="color: black;">{{VideoGroupItem.name}}</h2>
+          </div>
+          <video class="video" height="100%" width="100%" controls id="myvideo">
+            <source src="{{VideoGroupItem.Source}}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </ion-col>
+      <ion-col class="column" size-xs="12" size-sm="12" size-md="6" size-lg="3">
+        <div class="video-container" *ngFor="let VideoGroupItem of VideoGroup4; let i = index">
+          <div class="video-des-wrapper">
+            <h2 style="color: black;">{{VideoGroupItem.name}}</h2>
+          </div>
+          <video class="video" height="100%" width="100%" controls id="myvideo">
+            <source src="{{VideoGroupItem.Source}}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,252 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "../node_modules/aos/dist/aos.css";
+
+@import "bootstrap";
+* {
+  font-family: 'Cairo', sans-serif;
+}
+
+.hamburger {
+  position: relative;
+  z-index: 9000;
+  width: 2.5em;
+  margin-left: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.hamburger__line {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1875em;
+  background: black;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.hamburger--steps .hamburger__line {
+  transition: width 0.12s ease-in-out;
+
+  &:nth-child(2) {
+    width: 80%;
+  }
+
+  &:last-child {
+    width: 55%;
+  }
+}
+
+.hamburger--steps-right .hamburger__line {
+  float: right;
+}
+
+.hamburger--steps:hover .hamburger__line {
+  width: 100%;
+}
+
+.hamburger--active.hamburger--steps .hamburger__line {
+  transition: none;
+  width: 100%;
+}
+
+.hamburger--active .hamburger__line {
+  position: absolute;
+  top: 0.8em;
+  margin: 0;
+  background: white;
+
+  &:first-child {
+    transform: rotate(-45deg);
+  }
+
+  &:nth-child(2) {
+    display: none;
+  }
+
+  &:last-child {
+    transform: rotate(45deg);
+  }
+}
+
+
+
+.hamburger__line_white {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1875em;
+  background: white;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.link-list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.link-list {
+  display: flex;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: 'Staatliches', cursive;
+  padding: 0px 0px 0px 45px;
+  font-size: 1.2rem;
+
+  &:hover {
+    cursor: pointer;
+  //  text-decoration: underline;
+  }
+}
+
+.Logo {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-right: 20px;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu {
+  z-index: 200;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, .9);
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.menu_visible {
+  visibility: visible;
+}
+
+.menu-item-left {
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: rgb(82, 82, 82);
+  padding: 10px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  opacity: 1;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.menu-item-left_opacity {
+  opacity: 0.0;
+
+}
+
+.menu-left {
+  margin-top: 200px;
+  padding: 0px 0px 0px 40px;
+}
+
+.menu-right {
+  margin-top: 200px;
+  padding: 0px 0px 0px 40px;
+  opacity: 0;
+}
+
+.menu-item-right {
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: rgb(82, 82, 82);
+  padding: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.close-btn {
+  background-color: #c0392b;
+  color: #fff;
+  position: absolute;
+  right: 50px;
+  z-index: 999;
+  top: 50px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-btn-mobile{
+  visibility: hidden;
+  background-color: #c0392b;
+  color: #fff;
+  position: absolute;
+  right: 50px;
+  z-index: 999;
+  top: 50px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn-icon {
+  width: 40px;
+  height: 40px;
+}
